@@ -4,7 +4,7 @@
 	import nprogress from 'nprogress';
 	import { navigating } from '$app/stores';
 	import nprogresscss from 'nprogress/nprogress.css';
-	import tailwindcss from '../stylesheets/tailwind.css'
+	import tailwindcss from '../stylesheets/tailwind.css';
 	const RemoveNavListener = navigating.subscribe((value) => {
 		if (value) {
 			nprogress.start();
@@ -38,6 +38,36 @@
 	});
 </script>
 
+<svelte:head>
+	<link rel="icon" type="image/svg+xml" sizes="any" href={javascriptLogo} />
+	<!-- Primary Meta Tags -->
+	<title>JavaScripters: The Top JavaScript Discord Server</title>
+	<meta name="title" content="JavaScripters: The Top JavaScript Discord Server" />
+	<meta
+		name="description"
+		content="JavaScripters is a large, welcoming, Discord server for JavaScript, Node.js, and more!"
+	/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://javascripters.vercel.app/" />
+	<meta property="og:title" content="JavaScripters: The Top JavaScript Discord Server" />
+	<meta
+		property="og:description"
+		content="JavaScripters is a large, welcoming, Discord server for JavaScript, Node.js, and more!"
+	/>
+	<meta property="og:image" content={javascriptLogo} />
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://javascripters.vercel.app/" />
+	<meta property="twitter:title" content="JavaScripters: The Top JavaScript Discord Server" />
+	<meta
+		property="twitter:description"
+		content="JavaScripters is a large, welcoming, Discord server for JavaScript, Node.js, and more!"
+	/>
+	<meta property="twitter:image" content={javascriptLogo} />
+</svelte:head>
 <nav class="mb-2">
 	<div class="m-auto w-full flex p-2">
 		<div on:click={handleMobileIconClick} class={`mobile-icon${showMobileMenu ? ' active' : ''}`}>
