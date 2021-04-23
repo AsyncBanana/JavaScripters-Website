@@ -4,6 +4,7 @@
 	import nprogress from 'nprogress';
 	import { navigating } from '$app/stores';
 	import nprogresscss from 'nprogress/nprogress.css';
+	import tailwindcss from '../stylesheets/tailwind.css'
 	const RemoveNavListener = navigating.subscribe((value) => {
 		if (value) {
 			nprogress.start();

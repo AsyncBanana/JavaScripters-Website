@@ -3,6 +3,6 @@
 	export let href;
 </script>
 
-<a href={href} class={`p-4 ${type==="primary"?"bg-blue-700":"bg-gray-500"} rounded-md font-bold text-center shadow-sm hover:shadow-lg`}
+<a href={href} class={`p-4 ${type==="primary"?"bg-blue-700":"bg-gray-500"} ml-2 mr-2 rounded-md font-bold text-center shadow-sm hover:shadow-lg`}
 	><slot /></a
 >
