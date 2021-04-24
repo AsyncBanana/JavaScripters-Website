@@ -67,6 +67,7 @@
 		content="JavaScripters is a large, welcoming, Discord server for JavaScript, Node.js, and more!"
 	/>
 	<meta property="twitter:image" content={javascriptLogo} />
+	<meta charset="UTF-8">
 </svelte:head>
 <nav class="mb-2">
 	<div class="m-auto w-full flex p-2">
